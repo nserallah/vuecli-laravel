@@ -1,0 +1,17 @@
+{
+  "dropdownTitle": "Dashboard",
+  "body": "this is body section",
+  "headerMenu": {
+    "accounting": "Accounting",
+    "reports": "reports",
+    "orders": "orders",
+    "customers": "customers",
+    "tools": "tools"
+  },
+  "headerMenuSections": {
+    "finance": "finance",
+    "actions": "actions",
+    "newOrder": "new order"
+  }
+  
+}

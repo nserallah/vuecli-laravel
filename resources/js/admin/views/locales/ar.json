@@ -1,0 +1,16 @@
+{
+  "dropdownTitle": "لوحة التحكم",
+  "body": "هذا جسم الصفحة",
+  "headerMenu": {
+    "accounting": "الحسابات",
+    "reports": "التقارير",
+    "orders": "الأوامر",
+    "customers": "الزبائن",
+    "tools": "الادوات"
+  },
+  "headerMenuSections": {
+    "finance": "المالية",
+    "actions": "الأحداث",
+    "newOrder": "أمر جديد"
+  }
+}
