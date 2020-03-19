@@ -55,7 +55,6 @@
 		<!-- begin::Quick Nav -->
 
 
-
 		</div>
 </template>
 
@@ -67,7 +66,8 @@ export default {
 		return{
 			
 		}
-	}
+	},
+	
 	
 }
 </script>

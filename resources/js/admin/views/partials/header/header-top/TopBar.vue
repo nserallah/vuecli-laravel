@@ -273,7 +273,9 @@ m-nav__item m-nav__item--focus m-dropdown m-dropdown--large m-dropdown--arrow m-
                                                             <li class="m-nav__separator m-nav__separator--fit">
                                                             </li>
                                                             <li class="m-nav__item">
-                                                                <a href="snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">Logout</a>
+                                                                
+                                                                <log-out-btn></log-out-btn>
+                                                                 
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -289,7 +291,9 @@ m-nav__item m-nav__item--focus m-dropdown m-dropdown--large m-dropdown--arrow m-
                                 </ul>
                             </div>
                         </div>
+                       
                     </div>
+                    
 </template>
 
 <script>

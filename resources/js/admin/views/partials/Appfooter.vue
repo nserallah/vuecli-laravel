@@ -27,7 +27,7 @@
                             </li>
                             <li class="m-nav__item">
                                 <a href="#" class="m-nav__link">
-                                    <span class="m-nav__link-text">Purchase</span>
+                                    <span class="m-nav__link-text"></span>
                                 </a>
                             </li>
                             <li class="m-nav__item">
@@ -40,6 +40,7 @@
                 </div>
             </div>
         </div>
+        
     </footer>
 </template>
 

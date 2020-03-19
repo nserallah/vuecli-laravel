@@ -41,16 +41,17 @@
 	<body class="m-page--fluid m-page--loading-enabled m-page--loading m-header--fixed m-header--fixed-mobile m-footer--push m-aside--offcanvas-default">
 
 		<div id="app">
-			<layout></layout>
+			
 		</div>
 
 		<!--begin::Global Theme Bundle -->
-		  <script src="{{mix('js/main.js')}}"></script>
+		<script src="{{mix('js/main.js')}}"></script>
 
 		<script src="{{asset('/assets/vendors/base/vendors.bundle.js')}}" type="text/javascript"></script>
 		
 		<script src="{{asset('/assets/demo/demo10/base/scripts.bundle.js')}}" type="text/javascript"></script>
 
+		<script src="{{asset('/assets/snippets/custom/pages/user/login.js')}}" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 
 		<!-- begin::Page Loader -->

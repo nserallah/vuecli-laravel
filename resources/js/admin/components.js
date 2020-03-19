@@ -10,6 +10,10 @@ import QuickNav from './views/partials/QuickNav.vue'
 import Brand from './views/partials/header/header-top/Brand.vue'
 import TopBar from './views/partials/header/header-top/TopBar.vue'
 import HMenu from './views/partials/header/header-bottom/HMenu.vue'
+import logIn from './views/logIn.vue'
+import LogOutBtn from './views/partials/LogOutBtn.vue'
+import signUp from './views/partials/signup-signin/signUp.vue'
+import signIn from './views/partials/signup-signin/signIn.vue'
 
 Vue.component('layout', Layout);
 Vue.component('loader', Loader);
@@ -22,3 +26,7 @@ Vue.component('quickNav', QuickNav);
 Vue.component('brand', Brand);
 Vue.component('topBar', TopBar);
 Vue.component('HMenu', HMenu);
+Vue.component('login', logIn);
+Vue.component('log-out-btn', LogOutBtn);
+Vue.component('sign-up', signUp);
+Vue.component('sign-in', signIn);
