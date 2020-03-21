@@ -8,12 +8,12 @@ Vue.use(VueRouter)
 
 
 const routes = [
-  {
-    path: '/',
-    redirect: {
-        name: "login"
-    }
-},
+//   {
+//     path: '/',
+//     redirect: {
+//         name: "login"
+//     }
+// },
     {
       path: "/",
       name: "layout",

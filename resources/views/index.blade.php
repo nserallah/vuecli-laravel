@@ -54,6 +54,10 @@
 		<script src="{{asset('/assets/snippets/custom/pages/user/login.js')}}" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 
+		<!--begin::Page Scripts -->
+		<script src="{{asset('/assets/app/js/dashboard.js')}}" type="text/javascript"></script>
+		<!--end::Page Scripts -->
+
 		<!-- begin::Page Loader -->
 		<script>
 			$(window).on('load', function() {

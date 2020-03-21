@@ -54,6 +54,7 @@ export default {
             .then(response => {
                        
                 if(response.status == 200){
+                    localStorage.setItem('login', true);
                     this.$router.replace({ name: "layout" }).catch(err => {});
                 } else if(this.input.username == "" || this.input.password == "") {
                     this.validation = "Username or password can't be empty!";
