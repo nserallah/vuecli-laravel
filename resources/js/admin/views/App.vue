@@ -11,6 +11,9 @@ export default {
       
     }
   },
+   watch:{
+  	'$route':'checkLogin'
+  },
   created:function(){
   	this.checkLogin()
   },

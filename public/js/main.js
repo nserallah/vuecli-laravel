@@ -14062,7 +14062,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -14116,6 +14116,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
+  },
+  watch: {
+    '$route': 'checkLogin'
   },
   created: function created() {
     this.checkLogin();
@@ -27273,7 +27276,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.btn.m-btn--custom{\n  padding:0\n}\n.btn.m-btn--custom{\n  padding: .75rem 0rem;\n}\n.btn.m-btn--custom .logout {\n  padding: .75rem 4rem;\n}\n\n\n", ""]);
 
 // exports
 
@@ -27292,6 +27295,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -27299,7 +27303,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   methods: {
-    clearlogin: function clearlogin() {
+    clearLogin: function clearLogin() {
       localStorage.clear();
     }
   }
@@ -27321,14 +27325,22 @@ var render = function() {
         {
           staticClass:
             "btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder",
-          attrs: { to: "/login" },
-          on: {
-            click: function($event) {
-              return _vm.clearlogin()
-            }
-          }
+          attrs: { to: "/login" }
         },
-        [_vm._v("\n      Logout\n  ")]
+        [
+          _c(
+            "span",
+            {
+              staticClass: "logout",
+              on: {
+                click: function($event) {
+                  return _vm.clearLogin()
+                }
+              }
+            },
+            [_vm._v("Logout")]
+          )
+        ]
       )
     ],
     1
