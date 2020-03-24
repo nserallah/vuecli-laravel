@@ -14,6 +14,8 @@ import logIn from './views/logIn.vue'
 import LogOutBtn from './views/partials/LogOutBtn.vue'
 import signUp from './views/partials/signup-signin/signUp.vue'
 import signIn from './views/partials/signup-signin/signIn.vue'
+import dataTable from './views/partials/dataTable.vue'
+import tableAction from './views/partials/dataTable/tableAction.vue'
 
 Vue.component('layout', Layout);
 Vue.component('loader', Loader);
@@ -30,3 +32,5 @@ Vue.component('login', logIn);
 Vue.component('log-out-btn', LogOutBtn);
 Vue.component('sign-up', signUp);
 Vue.component('sign-in', signIn);
+Vue.component('data-table', dataTable);
+Vue.component('table-action', tableAction);

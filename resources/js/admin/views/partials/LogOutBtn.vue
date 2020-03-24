@@ -3,6 +3,7 @@
     <router-link to="/login" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
         <span class="logout" @click="clearLogin()">Logout</span>
     </router-link>
+    <!-- <button (click)="clearLogin()" [routerLink]="['/login']">Logout</button> -->
   </div>
 </template>
 
@@ -10,8 +11,7 @@
 export default {
   data(){
     return{
-      
-      
+     
     }
   },
   methods: {

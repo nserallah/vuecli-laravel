@@ -22,6 +22,7 @@
 					<!-- END: Subheader -->
 					<div class="m-content">
 						<h3>{{$t('body')}}</h3>
+						<data-table></data-table>
 					</div>
 				</div>
 			</div>
