@@ -11,9 +11,7 @@ export default {
       
     }
   },
-   watch:{
-  	'$route':'checkLogin'
-  },
+  
   created:function(){
   	this.checkLogin()
   },
@@ -39,5 +37,13 @@ export default {
 </script>
 
 <style>
-
+/* Start color and dateTime picker style */
+  @import '../../../../node_modules/@syncfusion/ej2-base/styles/material.css';
+  @import '../../../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+  @import '../../../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+  @import '../../../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+  @import '../../../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+  @import '../../../../node_modules/@syncfusion/ej2-lists/styles/material.css';
+  @import "../../../../node_modules/@syncfusion/ej2-vue-calendars/styles/material.css";
+/* End color and dateTime picker style */
 </style>

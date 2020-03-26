@@ -59,12 +59,40 @@
 		<!--end::Page Scripts -->
 
 		<!-- begin::Page Loader -->
-		<script>
+		<script defer>
 			$(window).on('load', function() {
 				$('body').removeClass('m-page--loading');
 			});
+
+
+			
+			
+			// function testFunc(){
+			// 	const myEl = document.getElementById('test');
+			// 	console.log(this.myEl.parentElement.parentElement.parentElement)
+				
+			// 	myEl.parentElement.parentElement.parentElement.style.display = 'none'
+			// }
+
+			$('.m-content .vgt-wrap .vgt-inner-wrap tbody .red').click(function () {
+				console.log('hello')
+			})
 	
 		</script>
+
+		<script defer>
+			//const myEl = document.getElementById('test');
+
+			// myEl.addEventListener('click', () => {
+			// 	console.log('Hello')
+			// });
+			// const button = document.getElementById('test');
+
+			// button.addEventListener('click', () => {
+			// 	console.log('Hello')
+			// });
+		</script>
+
 		<!-- end::Page Loader -->
 	</body>
 
