@@ -6,8 +6,10 @@ import 'vue-good-table/dist/vue-good-table.css'
 import { ColorPickerPlugin } from '@syncfusion/ej2-vue-inputs'; 
 import { enableRipple } from '@syncfusion/ej2-base';
 import { DateTimePickerPlugin } from '@syncfusion/ej2-vue-calendars';
+import LiquorTree from 'liquor-tree'
 
 
+Vue.use(LiquorTree)
 Vue.use(DateTimePickerPlugin);
 enableRipple(true);
 Vue.use(ColorPickerPlugin);

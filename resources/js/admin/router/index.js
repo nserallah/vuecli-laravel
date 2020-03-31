@@ -5,6 +5,7 @@ import logIn from '../views/logIn.vue'
 import dataTable from '../views/partials/dataTable/dataTable.vue'
 import myPickers from '../views/partials/date/myPickers.vue'
 import calendar from '../views/partials/date/calendar.vue'
+import treeCom from '../views/partials/three/treeCom.vue'
 
 Vue.use(VueRouter)
 
@@ -23,7 +24,8 @@ const routes = [
       children: [
         {path: "/", name: "datatable", component: dataTable},
         {path: "/pickers", name: "date pickers", component: myPickers},
-        {path: "/calendar", name: "date calendar", component: calendar}
+        {path: "/calendar", name: "date calendar", component: calendar},
+        {path: "/tree", name: "tree com", component: treeCom}
       ]
     },
     {

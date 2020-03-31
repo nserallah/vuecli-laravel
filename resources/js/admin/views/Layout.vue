@@ -33,6 +33,9 @@
 							<li>
 								<router-link to="/calendar" exact>Date Calender</router-link>
 							</li>
+							<li>
+								<router-link to="/tree" exact>three</router-link>
+							</li>
 						</ul>
 						<h3>{{$t('body')}}</h3>
 						<router-view></router-view>
