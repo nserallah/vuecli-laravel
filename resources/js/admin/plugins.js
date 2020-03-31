@@ -7,9 +7,11 @@ import { ColorPickerPlugin } from '@syncfusion/ej2-vue-inputs';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { DateTimePickerPlugin } from '@syncfusion/ej2-vue-calendars';
 import LiquorTree from 'liquor-tree'
+import VueTreeList from 'vue-tree-list'
 
 
 Vue.use(LiquorTree)
+Vue.use(VueTreeList)
 Vue.use(DateTimePickerPlugin);
 enableRipple(true);
 Vue.use(ColorPickerPlugin);

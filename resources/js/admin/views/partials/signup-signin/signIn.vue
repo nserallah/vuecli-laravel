@@ -71,4 +71,8 @@ export default {
 
 <style>
 
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-login__form-action .btn {
+    background-color: #7c0acd;
+}
+
 </style>

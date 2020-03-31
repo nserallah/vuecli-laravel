@@ -21,7 +21,8 @@ import calendar from './views/partials/date/calendar.vue'
 import colorPicker from './views/partials/date/pickers/colorPicker.vue'
 import datePicker from './views/partials/date/pickers/datePicker.vue'
 import dateTimePicker from './views/partials/date/pickers/dateTimePicker.vue'
-import treeCom from './views/partials/three/treeCom.vue'
+import treeCom from './views/partials/tree/treeCom.vue'
+
 
 
 Vue.component('layout', Layout);
@@ -47,3 +48,4 @@ Vue.component('color-picker', colorPicker);
 Vue.component('date-picker', datePicker);
 Vue.component('date-time-picker', dateTimePicker);
 Vue.component('tree-com', treeCom);
+

@@ -5,7 +5,7 @@ import logIn from '../views/logIn.vue'
 import dataTable from '../views/partials/dataTable/dataTable.vue'
 import myPickers from '../views/partials/date/myPickers.vue'
 import calendar from '../views/partials/date/calendar.vue'
-import treeCom from '../views/partials/three/treeCom.vue'
+import treeCom from '../views/partials/tree/treeCom.vue'
 
 Vue.use(VueRouter)
 

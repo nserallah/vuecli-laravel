@@ -21,7 +21,7 @@
 
 					<!-- END: Subheader -->
 					<div class="m-content">
-						<ul class="list-unstyled list-menu">
+						<ul class="list-unstyled list-menu mb-5">
 							<li>
 								<router-link to="/" exact>DataTable</router-link>
 							</li>
@@ -34,12 +34,12 @@
 								<router-link to="/calendar" exact>Date Calender</router-link>
 							</li>
 							<li>
-								<router-link to="/tree" exact>three</router-link>
+								<router-link to="/tree" exact>Tree form</router-link>
 							</li>
 						</ul>
-						<h3>{{$t('body')}}</h3>
+						<!-- <h3>{{$t('body')}}</h3> -->
 						<router-view></router-view>
-						<!-- <data-table></data-table> -->
+						
 					</div>
 				</div>
 			</div>
