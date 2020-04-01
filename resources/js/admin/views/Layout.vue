@@ -36,6 +36,9 @@
 							<li>
 								<router-link to="/tree" exact>Tree form</router-link>
 							</li>
+							<li>
+								<router-link to="/item-card" exact>Item Card</router-link>
+							</li>
 						</ul>
 						<!-- <h3>{{$t('body')}}</h3> -->
 						<router-view></router-view>

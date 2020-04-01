@@ -16,7 +16,7 @@
             />
           </label>
           <br />
-          <p v-if="ifEmty" style="color: #f00">Enter the name of your main category</p>
+          <p v-if="ifEmpty" style="color: #f00">Enter the name of your main category</p>
           <button
             class="btn btn-primary mb-3 text-uppercase bg-none"
             @click.prevent="addNode"
@@ -25,7 +25,9 @@
           <!-- <button class="btn btn-primary text-uppercase bg-none">add a subcategory</button> -->
 
           <div class="tree">
+            <!-- https://github.com/ParadeTo/vue-tree-list -->
             <vue-tree-list
+              @delete-node="onDel"
               :model="data"
               default-tree-node-name="new main category"
               default-leaf-node-name="new subcategory"
@@ -99,7 +101,7 @@ export default {
         }
       ],
       newDataNode: "",
-      ifEmty: false,
+      ifEmpty: false,
       newTree: {},
       data: new Tree([
         {
@@ -172,7 +174,7 @@ export default {
       }
     },
     onDel(node) {
-      console.log(node);
+      //console.log(node);
       node.remove();
     },
     // onChangeName (params) {
@@ -190,10 +192,10 @@ export default {
       var node = new TreeNode({ name: this.newDataNode, isLeaf: false });
       if (!this.data.children) this.data.children = [];
       if (!this.newDataNode) {
-        this.ifEmty = true;
+        this.ifEmpty = true;
       } else {
         this.data.addChildren(node);
-        this.ifEmty = false;
+        this.ifEmpty = false;
         this.newDataNode = "";
       }
     },

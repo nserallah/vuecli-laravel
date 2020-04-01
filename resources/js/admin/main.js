@@ -8,6 +8,7 @@ import './plugins.js'
 
 
 
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -47,6 +47,8 @@
 			
 		</div>
 
+		
+
 		<!--begin::Global Theme Bundle -->
 		<script src="{{mix('js/main.js')}}"></script>
 
@@ -60,7 +62,7 @@
 		<!--begin::Page Scripts -->
 		<script src="{{asset('/assets/app/js/dashboard.js')}}" type="text/javascript"></script>
 		<!--end::Page Scripts -->
-
+		
 		<!-- begin::Page Loader -->
 		<script defer>
 			$(window).on('load', function() {
