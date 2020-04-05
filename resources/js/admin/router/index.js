@@ -7,7 +7,7 @@ import myPickers from '../views/partials/date/myPickers.vue'
 import calendar from '../views/partials/date/calendar.vue'
 import treeCom from '../views/partials/tree/treeCom.vue'
 import itemCard from '../views/partials/slider/itemCard.vue'
-import itemOne from '../views/partials/itemInfo/itemOne.vue'
+
 
 Vue.use(VueRouter)
 

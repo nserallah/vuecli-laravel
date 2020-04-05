@@ -179,5 +179,12 @@ export default {
     margin-top:6px
 } 
  /* End eva-with-progress */
+.nav.nav-pills .nav-link, .nav.nav-tabs .nav-link{
+   font-weight: bold;
+
+}
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+   border-bottom: 2px solid #f00;
+ }
 
 </style>
