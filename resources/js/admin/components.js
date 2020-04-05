@@ -23,6 +23,10 @@ import datePicker from './views/partials/date/pickers/datePicker.vue'
 import dateTimePicker from './views/partials/date/pickers/dateTimePicker.vue'
 import treeCom from './views/partials/tree/treeCom.vue'
 import itemCard from './views/partials/slider/itemCard.vue'
+import itemOne from './views/partials/itemInfo/itemOne.vue'
+import overviewItem from './views/partials/itemInfo/moreInfo/overviewItem.vue'
+import featuresItem from './views/partials/itemInfo/moreInfo/featuresItem.vue'
+import commentsItem from './views/partials/itemInfo/moreInfo/commentsItem.vue'
 
 
 
@@ -50,4 +54,8 @@ Vue.component('date-picker', datePicker);
 Vue.component('date-time-picker', dateTimePicker);
 Vue.component('tree-com', treeCom);
 Vue.component('item-card', itemCard);
+Vue.component('item-info', itemOne);
+Vue.component('overview-item', overviewItem);
+Vue.component('features-item', featuresItem);
+Vue.component('comments-item', commentsItem);
 

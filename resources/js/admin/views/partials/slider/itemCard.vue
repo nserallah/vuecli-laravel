@@ -1,24 +1,20 @@
 <template>
-  <div class="item-card mt-5">
-    <!-- https://www.npmjs.com/package/vue-slick-carousel -->
+  <div class="mt-5">
+    <div class="item-card">
+      <!-- https://www.npmjs.com/package/vue-slick-carousel -->
      <VueSlickCarousel v-bind="settings" ref="carousel">
       <div class="item">
-        <div class="item-img">
+        
+          <div class="item-img">
           <img src="assets/demo/demo10/media/slider-images/item-img6.png">
           <span class="discount">-30%</span>
         </div>
         <h4 class="text-uppercase mt-2">this item title</h4>
-        <ul class="list-unstyled slider-eval">
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li>3</li>
-        </ul>
+        <rate :length="5" :value="2" :showcount="true" v-model="itemRate"/>
         <p class="price">100$</p>
         <div class="progress-bar"><span class="fill-color"></span></div>
         <span class="sold">sold:10</span>
+        
       </div>
 
       <div class="item">
@@ -26,15 +22,8 @@
           <img src="assets/demo/demo10/media/slider-images/item-img5.png">
           <span class="discount">-20%</span>
         </div>
-        <h4 class="text-uppercase mt-2">this item title</h4>
-        <ul class="list-unstyled slider-eval">
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li>0</li>
-        </ul>
+        <h4 class="text-uppercase mt-2">this item title</h4> 
+        <rate :length="5" :value="2" :showcount="true" />
         <p class="price">100$</p>
         <div class="progress-bar"><span class="fill-color"></span></div>
         <span class="sold">sold:10</span>
@@ -46,14 +35,7 @@
           <span class="discount">-40%</span>
         </div>
         <h4 class="text-uppercase mt-2">this item title</h4>
-        <ul class="list-unstyled slider-eval">
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li>3</li>
-        </ul>
+        <rate :length="5" :value="2" :showcount="true" />
         <p class="price">80$</p>
         <div class="progress-bar"><span class="fill-color"></span></div>
         <span class="sold">sold:10</span>
@@ -65,14 +47,7 @@
           <span class="discount">-30%</span>
         </div>
         <h4 class="text-uppercase mt-2">this item title</h4>
-        <ul class="list-unstyled slider-eval">
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li>0</li>
-        </ul>
+        <rate :length="5" :value="2" :showcount="true" />
         <p class="price">300$</p>
         <div class="progress-bar"><span class="fill-color"></span></div>
         <span class="sold">sold:10</span>
@@ -84,14 +59,7 @@
           <span class="discount">-10%</span>
         </div>
         <h4 class="text-uppercase mt-2">this item title</h4>
-        <ul class="list-unstyled slider-eval">
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li>0</li>
-        </ul>
+        <rate :length="5" :value="2" :showcount="true" />
         <p class="price">170$</p>
         <div class="progress-bar"><span class="fill-color"></span></div>
         <span class="sold">sold:10</span>
@@ -103,23 +71,18 @@
           <span class="discount">-50%</span>
         </div>
         <h4 class="text-uppercase mt-2">this item title</h4>
-        <ul class="list-unstyled slider-eval">
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li class="active"><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li><i class="fas fa-star" style="font-size: 48px;"></i></li>
-          <li>0</li>
-        </ul>
+        <rate :length="5" :value="2" :showcount="true" />
         <p class="price">50$</p>
         <div class="progress-bar"><span class="fill-color"></span></div>
         <span class="sold">sold:10</span>
       </div>
     </VueSlickCarousel>
-    <!-- <button @click="showPrev">show me the prev</button> -->
+    
     <div class="arrow angle-left" @click="showPrev"><i class="fas fa-angle-left fa-2x"></i></div>
-    <!-- <button @click="showNext">show me the next</button> -->
     <div class="arrow angle-right" @click="showNext"><i class="fas fa-angle-right fa-2x"></i></div>
+    </div>
+    
+    <item-info v-bind='message'></item-info>
   </div>
 </template>
 
@@ -132,7 +95,11 @@ export default {
   components: { VueSlickCarousel },
   data() {
     return {
-      isActive: false,
+      message: {
+        firstName: 'nserallah',
+        lastName: 'motawea'
+      },
+      itemRate: 0,
      settings: {
        "autoplay": true,
         "dots": false,
@@ -143,7 +110,29 @@ export default {
         "slidesToScroll": 1,
         "swipeToSlide": true,
         "arrows": true,
-        
+        // "rtl": true,
+        "responsive": [
+          {
+            "breakpoint": 1024,
+            "settings": {
+              "slidesToShow": 4,
+            }
+          },
+          {
+            "breakpoint": 600,
+            "settings": {
+              "slidesToShow": 3,
+              
+            }
+          },
+          {
+            "breakpoint": 480,
+            "settings": {
+              "slidesToShow": 1,
+              
+            }
+          }
+        ]
       }  
     }
   },
@@ -162,15 +151,25 @@ export default {
 .item-card{
   position:relative
 }
+
+.item-card a:hover {
+  text-decoration: none;
+}
 .item-card .item{
   padding: 0 10px
 }
+
 .item-card .item .item-img{
   width:100%;
   height: 200px;
   border-bottom: 1px solid #ddd;
   position:relative;
 }
+.item-card .item .item-img img {
+  width:100%;
+  height:100%
+}
+/* Start Discount Number */
 .item-card .item .discount{
   position: absolute;
   padding: 5px 10px;
@@ -182,25 +181,15 @@ export default {
   left: 10px;
   font-weight:bold;
 }
-.item-card .item .item-img img {
-  width:100%;
-  height:100%
-}
-.item-card .item .slider-eval li{
-  display: inline-block;
-}
-.item-card .item .slider-eval li i{
-   cursor: pointer;
-}
-.item-card .item .slider-eval li.active i{
-  color:#f2c00c;
- 
-}
+/* End Discount Number */
+/* Start price */
 .item-card .item .price{
   font-weight: bold;
   font-size:20px;
   color: #f00
 }
+/* End price */
+/* Start progress bar */
 .item-card .item .progress-bar{
   width:90%;
   height:10px;
@@ -215,6 +204,19 @@ export default {
 .item-card .item .sold {
   font-size: 18px;
 }
+/* End progress bar */
+/* Start items Evaluations */
+.Rate__star{
+  padding:0 !important;
+}
+.Rate__view {
+  display: inline-block;
+}
+.Rate .icon{
+  margin: 0 3px !important
+} 
+/* End items Evaluations */
+
 /* Start Arrow style */
 .item-card .arrow {
   display: inline-block;
