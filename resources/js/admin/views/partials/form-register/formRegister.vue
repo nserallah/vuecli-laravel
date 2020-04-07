@@ -90,11 +90,11 @@
             </div>
             <div class="acount-info" v-if="activSection === '2'">
               <div class="mb-3">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Email address *</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required v-model="registerData.email">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1">Password</label>
+                <label for="exampleInputPassword1">Password *</label>
                 <div class="passContainer">
                   <input :type="fieldType" class="form-control" id="exampleInputPassword1" placeholder="************" v-model="registerData.password">
                   <i @click="switchField(), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
@@ -102,7 +102,7 @@
                 
               </div>
               <div class="mb-5">
-                <label for="confirmPassword">Confirm Password</label>
+                <label for="confirmPassword">Confirm Password *</label>
                 <div class="passContainer">
                   <input :type="fieldType" class="form-control" id="confirmPassword" placeholder="************" v-model="registerData.rePassword">
                   <i @click="switchField(), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
