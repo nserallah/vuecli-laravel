@@ -54,7 +54,7 @@
                   <input id="mobileNum2" type="text" class="form-control" v-model="registerData.mobileNumber">
                 </div>
                 <div class="col-6 mt-3">
-                  <label for="commercialNum" class="text-capitalize">Type of activity</label><br>
+                  <label for="commercialNum" class="text-capitalize">Type of activity *</label><br>
                   <div class="custom-control custom-radio d-inline mr-3">
                     <input @change="activitySelected()" type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="products" v-model="registerData.checkActivity" checked>
                     <label class="custom-control-label" for="customRadio1">Products</label>
@@ -65,7 +65,7 @@
                   </div>
                 </div>
                 <div class="col-6 mt-3">
-                  <label class="text-capitalize" for="serviceSelection">service type</label>
+                  <label class="text-capitalize" for="serviceSelection">service type *</label>
                   <select :disabled="registerData.checkActivity.length == 0" class="custom-select mr-sm-2" id="serviceSelection" v-model="registerData.serviceType">
                     <option selected disabled value="">Choose Activity Type</option>
                     <option v-for="( activity , index) in activityType.data.children[selectionType].children" :key="index">
