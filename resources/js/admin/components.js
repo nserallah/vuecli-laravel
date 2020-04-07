@@ -27,6 +27,7 @@ import itemInfo from './views/partials/itemInfo/itemInfo.vue'
 import overviewItem from './views/partials/itemInfo/moreInfo/overviewItem.vue'
 import featuresItem from './views/partials/itemInfo/moreInfo/featuresItem.vue'
 import commentsItem from './views/partials/itemInfo/moreInfo/commentsItem.vue'
+import formRegister from './views/partials/form-register/formRegister.vue'
 
 
 
@@ -58,4 +59,5 @@ Vue.component('item-info', itemInfo);
 Vue.component('overview-item', overviewItem);
 Vue.component('features-item', featuresItem);
 Vue.component('comments-item', commentsItem);
+Vue.component('form-register', formRegister);
 

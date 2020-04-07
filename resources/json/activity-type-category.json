@@ -1,0 +1,230 @@
+﻿{
+    "status": 200,
+    "message": "تم عرض الثوابت بنجاح",
+    "error_code": 0,
+    "data": {
+        "name": "نوع النشاط",
+        "children": [
+            {
+                "id": 1,
+                "name": "منتجات",
+                "parent_id": null,
+                "is_active": 1,
+                "user_id": 1,
+                "created_at": "2020-03-31T20:53:18.000000Z",
+                "updated_at": "2020-03-31T20:53:18.000000Z",
+                "deleted_at": null,
+                "localName": "منتجات",
+                "children": [
+                    {
+                        "id": 1000,
+                        "name": "الإلكترونيات",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:18.000000Z",
+                        "updated_at": "2020-03-31T20:53:18.000000Z",
+                        "deleted_at": null,
+                        "localName": "الإلكترونيات",
+                        "children": []
+                    },
+                    {
+                        "id": 2000,
+                        "name": "الأزياء والملابس",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:18.000000Z",
+                        "updated_at": "2020-03-31T20:53:18.000000Z",
+                        "deleted_at": null,
+                        "localName": "الأزياء والملابس",
+                        "children": []
+                    },
+                    {
+                        "id": 3000,
+                        "name": "الاناقة والجمال",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:18.000000Z",
+                        "updated_at": "2020-03-31T20:53:18.000000Z",
+                        "deleted_at": null,
+                        "localName": "الاناقة والجمال",
+                        "children": []
+                    },
+                    {
+                        "id": 4000,
+                        "name": "العطور والبخور",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:18.000000Z",
+                        "updated_at": "2020-03-31T20:53:18.000000Z",
+                        "deleted_at": null,
+                        "localName": "العطور والبخور",
+                        "children": []
+                    },
+                    {
+                        "id": 5000,
+                        "name": "الرياضة واللياقة البدنية",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:18.000000Z",
+                        "updated_at": "2020-04-05T22:20:01.000000Z",
+                        "deleted_at": null,
+                        "localName": "الرياضة واللياقة البدنية",
+                        "children": []
+                    },
+                    {
+                        "id": 6000,
+                        "name": "المستلزمات المنزلية",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:18.000000Z",
+                        "updated_at": "2020-03-31T20:53:18.000000Z",
+                        "deleted_at": null,
+                        "localName": "المستلزمات المنزلية",
+                        "children": []
+                    },
+                    {
+                        "id": 7000,
+                        "name": "الهدايا",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "الهدايا",
+                        "children": []
+                    },
+                    {
+                        "id": 8000,
+                        "name": "الصناعات الحرفيه",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "الصناعات الحرفيه",
+                        "children": []
+                    },
+                    {
+                        "id": 9000,
+                        "name": "المنتجات الصحية",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "المنتجات الصحية",
+                        "children": []
+                    },
+                    {
+                        "id": 10000,
+                        "name": "الاغذية",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "الاغذية",
+                        "children": []
+                    },
+                    {
+                        "id": 11000,
+                        "name": "الأدوات والمعدات",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "الأدوات والمعدات",
+                        "children": []
+                    },
+                    {
+                        "id": 12000,
+                        "name": "الألعاب",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "الألعاب",
+                        "children": []
+                    },
+                    {
+                        "id": 13000,
+                        "name": "الكتب والقرطاسية",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-03-31T20:53:19.000000Z",
+                        "updated_at": "2020-03-31T20:53:19.000000Z",
+                        "deleted_at": null,
+                        "localName": "الكتب والقرطاسية",
+                        "children": []
+                    },
+                    {
+                        "id": 13021,
+                        "name": "الكمالبات",
+                        "parent_id": 1,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-04-05T07:27:20.000000Z",
+                        "updated_at": "2020-04-05T07:28:23.000000Z",
+                        "deleted_at": null,
+                        "localName": "الكمالبات",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "خدمات",
+                "parent_id": null,
+                "is_active": 1,
+                "user_id": 1,
+                "created_at": "2020-04-02T19:44:00.000000Z",
+                "updated_at": "2020-04-02T19:44:00.000000Z",
+                "deleted_at": null,
+                "localName": "خدمات",
+                "children": [
+                    {
+                        "id": 14000,
+                        "name": "اخرى",
+                        "parent_id": 2,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-04-02T19:44:00.000000Z",
+                        "updated_at": "2020-04-02T19:44:00.000000Z",
+                        "deleted_at": null,
+                        "localName": "اخرى",
+                        "children": []
+                    },
+                    {
+                        "id": 50000,
+                        "name": "خدمات التوصيل",
+                        "parent_id": 2,
+                        "is_active": 1,
+                        "user_id": 1,
+                        "created_at": "2020-04-02T19:44:00.000000Z",
+                        "updated_at": "2020-04-02T19:44:00.000000Z",
+                        "deleted_at": null,
+                        "localName": "خدمات التوصيل",
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "localName": "نوع النشاط"
+    },
+    "response_gateway": true
+}

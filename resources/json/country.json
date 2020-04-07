@@ -1,0 +1,45 @@
+﻿{
+    "fields": [
+        "id",
+        "slug",
+        "title",
+        "code",
+        "image",
+        "active",
+        "name",
+        "mobile_prefix",
+        "postal_code",
+        "currency_id",
+        "is_active",
+        "language_id",
+        "user_id",
+        "nationality",
+        "created_at",
+        "updated_at",
+        "deleted_at"
+    ],
+    "resources": [
+        {
+            "id": 1,
+            "title": "عمان",
+            "code": "OM",
+            "image": null
+        },
+		{
+            "id": 2,
+            "title": "فلسطين",
+            "code": "pal",
+            "image": null
+        },
+		{
+            "id": 3,
+            "title": "الأردن",
+            "code": "Jordan",
+            "image": null
+        }
+		
+    ],
+    "prev_page_url": null,
+    "next_page_url": null,
+    "per_page": 30
+}

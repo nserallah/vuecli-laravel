@@ -7,6 +7,7 @@ import myPickers from '../views/partials/date/myPickers.vue'
 import calendar from '../views/partials/date/calendar.vue'
 import treeCom from '../views/partials/tree/treeCom.vue'
 import itemCard from '../views/partials/slider/itemCard.vue'
+import formRegister from '../views/partials/form-register/formRegister.vue'
 
 
 Vue.use(VueRouter)
@@ -28,7 +29,8 @@ const routes = [
         {path: "/pickers", name: "date pickers", component: myPickers},
         {path: "/calendar", name: "date calendar", component: calendar},
         {path: "/tree", name: "tree com", component: treeCom},
-        {path: "/item-card", name: "item card", component: itemCard}
+        {path: "/item-card", name: "item card", component: itemCard},
+        {path: "/form-register", name: "form register", component: formRegister},
       ]
     },
     {

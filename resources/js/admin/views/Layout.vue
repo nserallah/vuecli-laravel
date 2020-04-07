@@ -39,6 +39,9 @@
 							<li>
 								<router-link to="/item-card" exact>Item Card</router-link>
 							</li>
+							<li>
+								<router-link to="/form-register" exact>Form Register</router-link>
+							</li>
 						</ul>
 						<!-- <h3>{{$t('body')}}</h3> -->
 						<router-view></router-view>
