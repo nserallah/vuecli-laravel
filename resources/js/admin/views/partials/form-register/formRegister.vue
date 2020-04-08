@@ -23,6 +23,8 @@
 
       <div class="section-container mt-5">
           <form action="" class="form-group">
+            <!-- Start Basic information tab content -->
+            <transition name="fade">
             <div class="basic-info" v-if="activSection === '1'">
               <div class="row mb-3">
                 <div class="col">
@@ -88,6 +90,10 @@
               </div>
               <p>Do you have an account, <a href="">log in here</a></p>
             </div>
+              </transition>
+            <!-- End Basic information tab content -->
+            <!-- Start Account information tab content -->
+              <transition name="fade">
             <div class="acount-info" v-if="activSection === '2'">
               <div class="mb-3">
                 <label for="exampleInputEmail1">Email address *</label>
@@ -96,16 +102,15 @@
               <div class="mb-3">
                 <label for="exampleInputPassword1">Password *</label>
                 <div class="passContainer">
-                  <input :type="fieldType" class="form-control" id="exampleInputPassword1" placeholder="************" v-model="registerData.password">
-                  <i @click="switchField(), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
+                  <input :type="fieldTypePass" class="form-control" id="exampleInputPassword1" placeholder="************" v-model="registerData.password">
+                  <i @click="switchField(1), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
                 </div>
-                
               </div>
               <div class="mb-5">
-                <label for="confirmPassword">Confirm Password *</label>
+                <label for="confirmPassword">Confirm *</label>
                 <div class="passContainer">
-                  <input :type="fieldType" class="form-control" id="confirmPassword" placeholder="************" v-model="registerData.rePassword">
-                  <i @click="switchField(), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
+                  <input :type="fieldTypeCon" class="form-control" id="confirmPassword" placeholder="************" v-model="registerData.rePassword">
+                  <i @click="switchField(2), showConPassword = !showConPassword" v-bind:class="{ slash: showConPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
                 </div>
               </div>
               <div class="custom-control custom-checkbox mr-sm-2 mb-2">
@@ -128,6 +133,8 @@
                 <button @click.prevent="submitValidation()" type="submit" class="btn btn-success text-uppercase mt-3 my-padding-button">Submit</button>
               </div>
             </div>
+              </transition>
+            <!-- End Account information tab content -->
           </form>
       </div> 
   </div>
@@ -165,7 +172,9 @@ export default {
       citiesFilterd: [],
       selectionType: 0,
       showPassword: false,
-      fieldType: 'password'
+      showConPassword: false,
+      fieldTypePass: 'password',
+      fieldTypeCon: 'password',
     }
   },
   methods:{
@@ -244,8 +253,13 @@ export default {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     },
-    switchField() {
-      this.fieldType = this.fieldType === 'password' ? 'text' : 'password'
+    switchField(e) {
+      if(e === 1) {
+        this.fieldTypePass = this.fieldTypePass === 'password' ? 'text' : 'password'
+      } else if(e === 2) {
+        this.fieldTypeCon = this.fieldTypeCon === 'password' ? 'text' : 'password'
+      }
+      
     }
   },
  
